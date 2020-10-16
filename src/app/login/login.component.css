@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+button{
+    background: orange;
+}
+.cabecera{
+    width: 100%;
+    padding: 2% 10%;
+    margin-bottom: 1.5%;
+    background: rgb(109, 58, 138);
+    background: linear-gradient(90deg, rgb(76, 49, 110)0%, rgb(122, 70, 156) 49%, rgb(127, 80, 155) 100%);
+    text-align: center;
+ }
+
+ h1 {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:#D0D3D4;
+}
+
+.contenido{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.banner{
+    width:100%;
+    float: left;
+    height: 37%;
+    padding: 10px;
+    background: rgb(109, 58, 138);
+    background: linear-gradient(90deg, rgb(76, 49, 110)0%, rgb(122, 70, 156) 49%, rgb(127, 80, 155) 100%);
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    .contenido{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+}

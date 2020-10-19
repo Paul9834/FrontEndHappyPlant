@@ -1,26 +1,13 @@
 {
   "name": "front-end-happy-plant",
   "version": "1.0.0",
-  "watch": {
-    "run-watch": {
-      "patterns": [
-        "src",
-        "server",
-        "e2e"
-      ],
-      "extensions": "js,ts,css,scss,html"
-    }
-  },
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node server/server.js",
-    "build": "ng build && node server/server.js",
-    "run-watch": "ng build && node server/server.js",
-    "preinstall": "npm install -g @angular/cli",
-    "postinstall": "ng build --aot -prod",
+    "start": "node src/server.js",
+    "build": "ng build",
+    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "watch": "npm-watch"
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "v12.18.3",

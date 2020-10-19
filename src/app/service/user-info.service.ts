@@ -7,11 +7,14 @@ import { Usuario } from '../models/user.model';
 })
 export class UserInfoService {
 
+
   constructor(private http: HttpClient) {
-
    }
-
-    createUser (newUser: Usuario) {
-        this.http.post('https://', newUser).subscribe(user =>console.log(user));
+    createUser(newUser: Usuario) {
+         this.http.post('https://happyplantbackend.herokuapp.com/propietarios', newUser).subscribe(user => console.log(user));
     }
-  }
+
+
+
+
+}

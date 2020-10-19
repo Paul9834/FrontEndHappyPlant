@@ -1,6 +1,8 @@
 export class Usuario{
-    username: string;
-    password: string;
-    usertype: string;
+    nombrePropietario: string;
+    fechaRegistro: Date;
+    fotoPerfil: string;
     email: string;
+    usuario: string;
+    pass: string;
 }

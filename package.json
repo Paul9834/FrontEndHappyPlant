@@ -7,7 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
+
+  },
+  "engines": {
+    "node": "v8.11.4",
+    "npm": "5.8.0"
   },
   "private": true,
   "dependencies": {
@@ -21,9 +27,13 @@
     "@angular/platform-browser": "~10.1.2",
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
+    "@angular/cli": "~10.1.2",
+    "@angular/compiler-cli": "~10.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~4.0.2"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.2",

@@ -26,12 +26,19 @@ export class LoginComponent implements OnInit {
   }
 
   validar(){
+
+    //test entradas
     console.log(this.username);
     console.log(this.password);
+
+    //get de objeto Usuario por username
     this.userInfoService.getUserByUsername(this.username).subscribe(Response=>{
 
       let user = Response;
 
+      /**
+       * cast response a Usuario
+       */
       this.usuario.nombrePropietario = user.nombrePropietario;
       this.usuario.fechaRegistro = user.fechaRegistro;
       this.usuario.fotoPerfil = user.fotoPerfil;
@@ -42,8 +49,10 @@ export class LoginComponent implements OnInit {
 
       if(this.password == this.usuario.pass){
         this.permitido = true;
+        
       }
 
+    
     console.log(this.usuario);
 
   }

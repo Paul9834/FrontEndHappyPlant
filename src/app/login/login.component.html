@@ -6,9 +6,9 @@
 
     <div class="contenido">
         <div class="username-input">
-            <mat-form-field class="example-full-width">
+            <mat-form-field appearance="fill">
               <mat-label>Ingresa tu usuario</mat-label>
-              <input matInput>
+              <input matInput name="username" [(ngModel)]="username">
             </mat-form-field>
         </div>
     
@@ -22,12 +22,10 @@
             </mat-form-field>
         </div>
 
-        <button mat-raised-button  [style]="{'margin':'1%'}">Iniciar sesión</button>
+        <button mat-raised-button (click)="validar()" [style]="{'margin':'1%'}">Iniciar sesión</button>
         <br>
         <button mat-raised-button  [routerLink]="['/home']" [style]="{'margin':'1%'}">Atrás</button>
         <br>
     </div>
-
-    
 
 </app-menu>

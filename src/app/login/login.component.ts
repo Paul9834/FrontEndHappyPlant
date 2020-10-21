@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/user.model';
+import { UserInfoService } from '../service/user-info.service';
 
 @Component({
   selector: 'app-login',
@@ -10,12 +11,41 @@ export class LoginComponent implements OnInit {
 
   username: string;
   password: string;
+  permitido: boolean;
+  usuario : Usuario;
   
-  constructor() { }
+  constructor(private userInfoService: UserInfoService) {
+    this.permitido = false;
+    this.usuario = new Usuario();
+   }
 
   hide = true;
 
   ngOnInit(): void {
+    
+  }
+
+  validar(){
+    console.log(this.username);
+    console.log(this.password);
+    this.userInfoService.getUserByUsername(this.username).subscribe(Response=>{
+
+      let user = Response;
+
+      this.usuario.nombrePropietario = user.nombrePropietario;
+      this.usuario.fechaRegistro = user.fechaRegistro;
+      this.usuario.fotoPerfil = user.fotoPerfil;
+      this.usuario.email = user.email;
+      this.usuario.usuario = user.usuario;
+      this.usuario.pass = user.pass;
+      });
+
+      if(this.password == this.usuario.pass){
+        this.permitido = true;
+      }
+
+    console.log(this.usuario);
+
   }
 
 }

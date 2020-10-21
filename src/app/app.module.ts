@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MenuComponent } from './menu/menu.component';
 import  {MatToolbarModule } from '@angular/material/toolbar';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -26,15 +25,16 @@ import { FormsModule } from '@angular/forms';
 import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario.component';
 import {HttpClientModule } from '@angular/common/http';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import { MenuNavComponent } from './menu-nav/menu-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     HomeComponent,
     LoginComponent,
     RegistrarUsuarioComponent,
-    PerfilUsuarioComponent
+    PerfilUsuarioComponent,
+    MenuNavComponent
   ],
   imports: [
     BrowserModule,

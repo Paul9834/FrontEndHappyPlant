@@ -31,10 +31,6 @@ export class UserInfoService {
     });
 
   }
-  
-  createUser(newPlant: Planta) {
-        this.http.post(this._urlPlantas, newPlant).subscribe(plant => console.log(plant));
-  }
 
   getPlantBySpecies(Species: string): Observable <any> {
 

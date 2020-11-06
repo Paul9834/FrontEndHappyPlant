@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   permitido: boolean;
   usuario : Usuario;
   
+  
   constructor(private userInfoService: UserInfoService) {
     this.permitido = false;
     this.usuario = new Usuario();

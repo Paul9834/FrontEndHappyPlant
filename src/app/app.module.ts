@@ -46,11 +46,11 @@ import { MenuNavComponent } from './menu-nav/menu-nav.component';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-
     MatInputModule,
     MatFormFieldModule,
     MatSlideToggleModule,
     FormsModule,
+    MatCardModule,
     HttpClientModule
   ],
   providers: [],

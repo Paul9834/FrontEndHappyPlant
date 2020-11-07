@@ -32,6 +32,20 @@ export class UserInfoService {
 
   }
 
+  getPlantBySpecies(Species: string): Observable <any> {
+
+    let url = this._urlPlantas +'/log/' + Species;
+
+    let headers = new HttpHeaders().set(
+      'Type-Content','aplication/json'
+    )
+
+    return this.http.get(url, {
+      headers: headers
+    });
+
+  }
+
 
 
 

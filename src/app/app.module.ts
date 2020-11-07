@@ -48,11 +48,11 @@ import { ActualPlantaComponent } from './actual-planta/actual-planta.component';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-
     MatInputModule,
     MatFormFieldModule,
     MatSlideToggleModule,
     FormsModule,
+    MatCardModule,
     HttpClientModule
   ],
   providers: [],

@@ -1,0 +1,50 @@
+<!--Modulo: Juan Camilo Cruz Jimenez-->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+     
+<div class="responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="general">
+        <div class="Header">
+            <h1 class="center">{{ title }}</h1>
+        </div>
+        
+        <div class="profile">
+            <div class="image">
+                <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/tener-girasoles-en-casa-guentherdillingen.jpg" alt="plantPhoto" width="250" height="200">
+            </div>
+            
+                <p>
+                <label for="nombrePlanta">Nombre: </label>
+                <label for="nombrePlanta">planti la maseta </label>
+                <label for="idPropietario">#######</label>
+                <label for="especie">#######</label>
+                
+            </p>
+            <p>
+                <label for="fechaRegistroLabel">Fecha de registro: </label>
+                <label for="fecha"> soy una fecha </label>
+            </p>
+            
+        </div>
+        
+        <div class="procesos">
+            <p>
+                <label for="proyectoLabel">Plantas: </label>
+                <label for="proyecto">No tiene plantas registradas</label>
+            </p>
+    
+            <div class="buttons">
+    
+                <div class="new-plant-button">
+                    <button mat-raised-button     >Registrar planta</button>
+                </div>
+    
+                <div class="tasks-button">
+                    <button [routerLink]="['/verTareas']" mat-raised-button     >Mis tareas</button>
+                </div>
+            </div>
+        <button mat-raised-button     [routerLink]="['/home']" [style]="{'margin':'10px'}">Atras</button>
+        </div>
+        </div>
+    </div>
+   

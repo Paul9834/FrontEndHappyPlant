@@ -26,6 +26,7 @@ import { RegistrarUsuarioComponent } from './registrar-usuario/registrar-usuario
 import {HttpClientModule } from '@angular/common/http';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
+import { ActualPlantaComponent } from './actual-planta/actual-planta.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MenuNavComponent } from './menu-nav/menu-nav.component';
     LoginComponent,
     RegistrarUsuarioComponent,
     PerfilUsuarioComponent,
-    MenuNavComponent
+    MenuNavComponent,
+    ActualPlantaComponent
   ],
   imports: [
     BrowserModule,
